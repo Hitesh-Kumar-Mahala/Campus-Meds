@@ -91,10 +91,10 @@ const Header = ({ isLogin, setIsLogin, showLoader, hideLoader }) => {
           <img src={nitLogo} alt="College Logo" className=" h-20 w-20 p-1" />
           <div className="flex flex-col justify-center leading-tight items-start">
             <div className="text-sm md:text-base font-semibold text-blue-400 ">
-              राष्ट्रीय प्रौद्योगिकी संस्थान, रायपुर
+              राष्ट्रीय प्रौद्योगिकी संस्थान, रायपुर - औषधालय
             </div>
             <div className="font-bold text-blue-400 text-lg">
-              National Institute of Technology, Raipur
+              National Institute of Technology, Raipur - Dispensary
             </div>
           </div>
         </div>

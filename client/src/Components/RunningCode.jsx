@@ -1,4 +1,3 @@
-import { TypeAnimation } from 'react-type-animation';
 const Runningcd=({color,codeblock,backgroundGradient})=>{
     return (
         <div className={`flex flex-row w-full md:w-[50%] gap-[2px] px-[2px] py-[14px] shadow-sm z-10 shadow-richblack-500 relative`}>
@@ -24,17 +23,16 @@ const Runningcd=({color,codeblock,backgroundGradient})=>{
             </div>
 
             <div className={`w-[90%] flex flex-col gap-2 font-bold font-mono ${color}`}>
-                <TypeAnimation 
-                    sequence={[codeblock, 5000, ""]}
-                    repeat={Infinity}
-                    omitDeletionAnimation={true}
+                <div
                     style={
                         {
                             whiteSpace:"pre-line",
                             display: "inline-block",
                         }
                     }
-                />
+                >
+                    {codeblock}
+                </div>
             </div>
         </div>
 
