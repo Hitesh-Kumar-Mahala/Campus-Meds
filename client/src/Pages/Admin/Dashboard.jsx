@@ -62,7 +62,7 @@ const AdminDashboard=({showLoader,hideLoader})=>{
 
             {/* head */}
             <div className="flex justify-between items-center w-full mx-auto p-4 border-b border-gray-300 bg-white shadow-sm">
-                <p className="text-lg font-semibold text-gray-800">Welcome to Admin Panel</p>
+                <p className="text-lg font-semibold text-gray-800">Welcome to Staff Panel</p>
                 <div className="flex gap-4">
                     {
                         userType?.role==="Admin" && <button onClick={()=>openCloseHandler("Staff")} className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
