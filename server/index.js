@@ -15,12 +15,14 @@ const fileUpload = require("express-fileupload");
 app.use(cookieParser());
 
 // 2. CORS setup — allow your frontend to send credentials (cookies)
-app.use(cors({
-  origin: [
-  "http://localhost:5173", "http://localhost:5173/", "https://campus-meds.onrender.com", "https://campus-meds.onrender.com/","*"
-          ], // Your deployed frontend URL
-  credentials: true, //  Required to allow cookies
-}));
+// app.use(cors({
+//   origin: [
+//   "http://localhost:5174", "http://localhost:5173/", "https://campus-meds.onrender.com", "https://campus-meds.onrender.com/","*"
+//           ], // Your deployed frontend URL
+//   credentials: true, //  Required to allow cookies
+// }));
+
+app.use(cors());
 
 // 3. JSON parser
 app.use(express.json());
